@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Andina del Cusco - Calculadora Aritmética</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>UNIVERSIDAD ANDINA DEL CUSCO</h1>
+            <p>Escuela profesional de Ingeniería de Sistemas</p>
+        </div>
+        
+        <div class="content">
+            <div class="integrantes">
+                <h3>INTEGRANTES:</h3>
+                <div class="integrantes-lines">
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line"></div>
+                </div>
+            </div>
+            
+            <div class="calculator-section">
+                <h2 class="section-title">UNIDAD ARITMÉTICA - LÓGICA</h2>
+                
+                <div class="input-group">
+                        <div class="input-field">
+                            <label for="numero1">Número 1:</label>
+                            <input type="text" id="numero1" placeholder="Ingrese el primer número">
+                        </div>
+                        <div class="input-field">
+                            <label for="numero2">Número 2:</label>
+                            <input type="text" id="numero2" placeholder="Ingrese el segundo número">
+                        </div>
+                </div>
+                
+                <div class="conversion-section">
+                    <div class="conversion-title">CONVERSIÓN A:</div>
+                    <div class="conversion-buttons">
+                        <button class="btn btn-conversion active">BIN</button>
+                        <button class="btn btn-conversion">OCT</button>
+                        <button class="btn btn-conversion">HEX</button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="resultado1">Número 1:</label>
+                            <input type="text" id="resultado1" placeholder="Resultado de conversión" readonly>
+                        </div>
+                        <div class="input-field">
+                            <label for="resultado2">Número 2:</label>
+                            <input type="text" id="resultado2" placeholder="Resultado de conversión" readonly>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="operation-section">
+                    <div class="operation-title">OPERACIÓN:</div>
+                    <div class="operation-buttons">
+                        <button class="btn btn-operation active">+</button>
+                        <button class="btn btn-operation">−</button>
+                        <button class="btn btn-operation">×</button>
+                        <button class="btn btn-operation">÷</button>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <div class="results-title">RESULTADOS</div>
+                    <div class="results-grid">
+                        <div class="result-field">
+                            <label>RESULTADO:</label>
+                            <div class="result-display" id="resultado-binario">Resultado aparecerá aquí</div>
+                        </div>
+                        <div class="result-field">
+                            <label>RESULTADO EN DECIMAL:</label>
+                            <div class="result-display" id="resultado-decimal">Resultado decimal aparecerá aquí</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript para funcionalidad de ensamblador se agregará posteriormente -->
+</body>
+</html>
